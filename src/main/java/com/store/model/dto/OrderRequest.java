@@ -13,17 +13,19 @@ public class OrderRequest {
     private LocalDateTime orderDate;
     private String status;
     private BigDecimal total;
+
+
     private long customerId;
     private List<OrderItemRequest> items;
 
+    public void setCustomerId(long customerId) { this.customerId = customerId; }
+    public Long getCustomerId() { return Long.valueOf(customerId); }
     public LocalDateTime getOrderDate() { return orderDate; }
     public void setOrderDate(LocalDateTime orderDate) { this.orderDate = orderDate; }
     public String getStatus() { return status; }
     public void setStatus(String status) {  this.status = status; }
     public BigDecimal getTotal() { return total; }
     public void setTotal(BigDecimal total) { this.total = total;}
-    public Long getCustomerId() { return Long.valueOf(customerId); }
-
     public List<OrderItemRequest> getItems() { return items; }
     public void setItems(List<OrderItemRequest> items) { this.items = items; }
 
@@ -39,6 +41,7 @@ public class OrderRequest {
         public BigDecimal getPrice() { return price; }
         public void setPrice(BigDecimal price) { this.price = price; }
         public Long getProductId() {return Long.valueOf(productId); }
+        public void setProductId(long productId) { this.productId = productId; }
     }
 }
 

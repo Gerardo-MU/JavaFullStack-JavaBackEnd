@@ -15,7 +15,7 @@ public class Customer {
     private long id;
 
     @Column(name = "Email", length = 30)
-    @NotBlank
+
     private String email;
     @Column(name = "UserName", length = 10, unique = true)
     @NotBlank

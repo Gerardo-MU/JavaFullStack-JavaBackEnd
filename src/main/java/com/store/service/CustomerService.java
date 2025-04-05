@@ -47,6 +47,13 @@ public class CustomerService {
         return customerRepository.save(customer);
     }
 
+    /**
+     * Busca un cliente por su nombre de usuario registrado
+     */
+    public Optional<Customer> findByUsername(String username) {
+        return customerRepository.findByUserName(username);
+    }
+
     public Customer loginCustomer(String username, String password) {
         //Realiza la consulta de la existencia del cliente
         Optional<Customer> existingCustomer = customerRepository.findByUserName(username);
