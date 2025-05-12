@@ -51,7 +51,7 @@ Para realizar el login de un cliente existente se usa el endpoint **/auth/login*
 
 Para realizar un registro de nuevo cliente se usa el endpoint **/auth/register**
 
-![Registro](https://raw.githubusercontent.com/Gerardo-MU/JavaFullStack-JavaBackEnd/refs/heads/public/screeshots/sc3.png)
+![Registro](https://raw.githubusercontent.com/Gerardo-MU/JavaFullStack-JavaBackEnd/refs/heads/master/public/screeshots/sc3.png)
 
 
 **Confirmacion de orden**
@@ -96,4 +96,4 @@ gradle bootrun
 5. Prueba la aplicación
 
 Abre [PostMan](https://www.postman.com/) e importa el archivo **BackEnd-de-Tienda-Online.postman_collection.json** situado en
-**JavaFullStack-JavaBackEnd/public** y prueba cualquera de las peticiones POST
+**public/** y prueba cualquera de las peticiones POST
